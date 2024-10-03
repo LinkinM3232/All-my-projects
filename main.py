@@ -1,5 +1,4 @@
-from first_script import wqw, program, стоимость_разговора, ttt, count_same_digits, count_different_digits, \
-    remove_digits
+from first_script import *
 
 number = int(input("Введите число от 1 до 100: "))
 wqw(number)

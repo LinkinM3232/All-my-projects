@@ -49,6 +49,37 @@ def remove_digits(number):
     return number.replace("3", " ").replace("6"," ")
 
 
+#1 задание. Модуль 4. Строки. Списки. Часть 1
+pervoayastrochka = input("Введите строку: ")
+pervoayastrochka = pervoayastrochka.replace(" ", "").lower()
+
+if pervoayastrochka == pervoayastrochka[::-1]:
+    print("Это палиндром сто проц")
+else:
+    print("Не палиндром хз что это")
+
+#2 задание. Модуль 4. Строки. Списки. Часть 1
+AAAETOCHTOTEXT = input("Введите текст: ")
+reservNIEE_SLOVA = input("Введите зарезервированные слова: ").split()
+
+SLOVA = AAAETOCHTOTEXT.split()
+
+for i in range(len(SLOVA)):
+    if SLOVA[i].lower() in reservNIEE_SLOVA:
+        SLOVA[i] = SLOVA[i].upper()
+
+izmenenny_tekst = " ".join(SLOVA)
+print("Измененный текст:", izmenenny_tekst)
+
+#3 задание. Модуль 4. Строки. Списки. Часть 1
+AAAETOCHTOTEXT = input("Введите текст: ")
+AAAETOCHTOTEXT = AAAETOCHTOTEXT.count('.') + AAAETOCHTOTEXT.count('!') + AAAETOCHTOTEXT.count('?')
+print("Количество предложений:", AAAETOCHTOTEXT)
+
+
+
+
+
 
 
 
